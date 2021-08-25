@@ -1,15 +1,19 @@
-//Write a C program to input all sides of a triangle and check whether triangle is valid or not.
-#include<stdio.h>
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+using namespace std;
+
 int main()
 {
-    float a,b,c;
-    printf("enter the side of triangle: ");
-    scanf("%f%f%f",&a,&b,&c);
-    if((a+b)>c && (b+c)>a && (c+a)>b)
-    {
-        printf("The triangle is valid\n");
-    }
-    else
-        printf(" The triangle is Not valid\n");
-    return 0;
+ int sum =0,n;
+ cout << "Enter the last  number :";
+ cin >> n;
+ for (int i =1; i<=n; i=i+2)
+ {
+     sum = sum + pow(i,5);
+
+ }
+ cout <<sum;
+
+    getch();
 }
